@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
    }
+   body{
+    font-family: 'Alegreya SC';
+   }
 
 .img_container{
     clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
     background-image: url(./cover_img.jpg);
-    width: 1400px;
-    height: 900px;
+    width:100%;
+    height: 750px;
     background-repeat: no-repeat;
     background-size:cover;
     object-fit: contain;
@@ -22,10 +25,10 @@
 
 }
 .nav{
-    width: 1000px;
+    width: 100%;
     height: 40px;
     background-color: rgb(0, 0, 0,0.8);
-   
+    max-width: 1000px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -111,8 +114,9 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 1400px;
-    height: 100px;
+    width: 100%;
+    max-width: 1400px;
+    height: 300px;
     flex-direction: row;
     max-width: 800px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -122,8 +126,79 @@
 }
 .txt_2{
     margin: 0px 40px 0px 40px;
-    text-align: center;
+    justify-content: center;
 }
 .txt_2 p{
     color:rgba(0, 0,0, 0.6);
+    text-align: center;
+   
+}
+.txt_2 h4{
+    text-align: center;
+}
+.txt_2 img{
+   margin-left: 60px;
+}
+.vid_cont_1{
+    background-image: url(./video\ screen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 800px;
+    height: 550px;
+    margin: 0 auto;
+    transition: 0.2s;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display:flex ;
+    justify-content: center;
+  
+}
+.txt_cont_3{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.txt_3{
+    /* width: 700px; */
+    max-width: 400px;
+    margin: 0px 10px 0px 300px;
+    
+
+}
+.txt_3 h1{
+    
+    font-weight: 200;
+    opacity: 0.7;
+    
+}
+.txt_3 p{
+    font-size: small;
+    opacity: 0.4;
+}
+.txt_3 span{
+    display: flex;
+    width: 100px;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #fdd500;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin:  0 auto;
+}
+.img_1{
+    width: 700px;
+    max-width: 300px;
+    background-image: url(./img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 300px;
+    float: left;
+    
+   
 }
