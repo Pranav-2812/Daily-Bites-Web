@@ -140,7 +140,7 @@
    margin-left: 60px;
 }
 .vid_cont_1{
-    background-image: url(./video\ screen.png);
+    background-image: url(./video\ screen.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -189,11 +189,13 @@
     justify-content: center;
     align-items: center;
     margin:  0 auto;
+    font-size: medium;
+    box-shadow: 0px 3px 3px 0px grey;
 }
 .img_1{
     width: 700px;
     max-width: 300px;
-    background-image: url(./img.png);
+    background-image: url(./img.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
