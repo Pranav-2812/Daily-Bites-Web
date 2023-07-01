@@ -8,7 +8,7 @@
 
 .img_container{
     clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
-    background-image: url(./cover.jpg);
+    background-image: url(./cover_img1.jpg);
     width:100%;
     height: 750px;
     background-repeat: no-repeat;
@@ -17,16 +17,16 @@
     object-position: center;
     display: flex;
     /* justify-content: center; */
-    opacity: 0.6;
-    margin: 0 auto;
     opacity: 1;
+    margin: 0 auto;
+    
     flex-direction: column;
 
 
 }
 .nav{
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: rgb(0, 0, 0,0.8);
     max-width: 1000px;
     display: flex;
@@ -78,7 +78,7 @@
    line-height: 1.4;
    margin-top: 10%;
    color: white;
-   /* opacity: 0.8; */
+   text-shadow: 25px 25px 25px 25px  black;
 }
 .txt_cont_1{
     display: flex;
@@ -125,8 +125,9 @@
 
 }
 .txt_2{
-    margin: 0px 40px 0px 40px;
+    margin: 20px 40px 0px 40px;
     justify-content: center;
+    
 }
 .txt_2 p{
     color:rgba(0, 0,0, 0.6);
@@ -137,7 +138,13 @@
     text-align: center;
 }
 .txt_2 img{
-   margin-left: 60px;
+    margin:0 auto;
+    padding-bottom: 15px;
+    justify-content: center;
+    background-size: contain;
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
 }
 .vid_cont_1{
     background-image: url(./video\ screen.jpg);
@@ -232,8 +239,10 @@
     width: 100%;
 }
 .box_1 h4{
-    width: 400px;
-    opacity: 0.4;
+   
+    text-align: center;
+    width: 500px;
+    opacity: 0.6;
     font-weight: 200;
 }
 .box_1 h2{
@@ -266,8 +275,14 @@
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.4);
 }
 .card h2 {
-    margin-top: 5%;
+    margin-top: 15%;
     opacity: 0.7;
+}
+.card p {
+    margin-top: 10%;
+    text-align: left;
+    padding-left: 20%;
+    padding-bottom: 3%;
 }
 .card span{
     width: 200px;
@@ -281,6 +296,7 @@
     margin: 0 auto;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.07);
     transition: all .2s ease-out;
+    margin-top: 25%;
  }
  .card span:hover{
     transform: scale(1.15);
@@ -309,26 +325,28 @@
     box-sizing: border-box;
     border-radius: 30px;
     max-width:50%;
-    width: 350px;
+    width: 600px;
     height: 450px;
     align-items: center;
     display: flex;
     margin-top: 5%;
     box-shadow: 0px 13px 19px 10px rgba(0, 0, 0, 0.07);
     flex-direction: column;
+    
    
  }
  .field input{
    margin: 0 auto;
    display: flex;
    flex-direction: column;
-   margin-top: 25%;
+   margin-top: 10%;
    border-radius: 30px;
    align-items: center;
-   width: 200px;
+   width: 350px;
    height: 50px;
-   padding-left: 15%;
-   background-color: rgba(0, 0,0, 0.8);
+   padding-left: 10%;
+   background-color: white;
+   opacity: 0.7;
    color: white;
    
  }
@@ -336,13 +354,15 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
-  
+    margin-top: 10%;
+    border-radius: 25px;
     align-items: center;
-    width: 200px;
+    width: 350px;
     height: 100px;
-    padding-left: 15%;
-    background-color: rgba(0, 0,0, 0.8);
+    padding-left: 10%;
+    padding-top: 5%;
+    background-color: white;
+    opacity: 0.7;
     color: white;
     
  }
@@ -360,47 +380,8 @@
    justify-content: center;
    align-items: center;
  }
- .info {
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
- }
- .loc{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-
- }
- .box {
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    color: rgb(0, 0, 0,0.8);
-    margin: 0 auto;
-    
- }
- .box h3{
-    font-size: medium;
- }
- .box h4{
-    opacity: 0.7;
- }
- .map iframe{
-    width: 500px;
-    height: 350px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 2%;
-    border-radius: 10px;
- }
+ 
+ 
  .footer{
     width: 100%;
     height: 300px;
