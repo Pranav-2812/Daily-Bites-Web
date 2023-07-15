@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./style.css">
     <!-- <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'> -->
     <script src="https://kit.fontawesome.com/20cafe9e9f.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </head>
-<body>
-    <div class="img_container">
+<body onload="load()">
+    <div class="img_container" id="top">
         <nav class="nav">
             <div class="nav_btn">
                <span><a >Home</a></span>
@@ -132,7 +133,7 @@
             <div class="form">
                 <form>
                     <div class="field">
-                        <input type="txt" id="name"  name="Name"  autofocus placeholder="Your Name">
+                        <input type="txt" id="name"  name="Name"   placeholder="Your Name">
                     </div>
                     <div class="field">
                         <input type="email" id="email" name="Email"  placeholder="Your Email">

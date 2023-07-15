@@ -4,6 +4,8 @@
    }
    body{
     font-family: 'Alegreya SC';
+    display: flex;
+    flex-direction: column;
    }
 
 .img_container{
@@ -347,7 +349,7 @@
    padding-left: 10%;
    background-color: white;
    opacity: 0.7;
-   color: white;
+   color: black;
    
  }
  .field textarea {
@@ -363,7 +365,7 @@
     padding-top: 5%;
     background-color: white;
     opacity: 0.7;
-    color: white;
+    color:black;
     
  }
  .form button{
@@ -373,7 +375,7 @@
     width: 100px;
     height: 35px;
     background-color: #fdd500;
-    color: white;
+    color:black;
     border-radius: 25px;
     outline: none;
     font-size: medium;
