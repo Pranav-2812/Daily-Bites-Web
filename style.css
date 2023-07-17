@@ -448,6 +448,9 @@
     flex-direction: column;
     width: 300px;
 }
+.links a:link,a:visited{
+    text-decoration: none;
+}
 .devs{
     display: flex;
     color: white;

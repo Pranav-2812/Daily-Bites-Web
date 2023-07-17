@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20cafe9e9f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+         
+            display: flex;
+            flex-direction: column;
+        }
+        .img_container{
+            
+         clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
+         background-image: url(./cover_img1.jpg);
+         width:100%;
+         height: 600px;
+         background-repeat: no-repeat;
+         background-size:cover;
+         object-fit: contain;
+         object-position: center;
+         display: flex;
+         opacity: 1;
+          margin: 0 auto;
+        position: relative;
+        flex-direction: column;
+
+
+        }
+       .img_container::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0,0, 0.2);
+        }
+        .nav_btn{
+    width: 100%;
+    height: 50px;
+    top: 3%;
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 300;
+    
+    font-size: 15px;
+    padding: 0px 10px 0px 10px;
+    justify-content:flex-start;
+    margin: 0 auto;
+   
+    
+}
+.nav_btn span {
+    
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 125px;
+    height: 35px;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: transparent;
+    transition: 0.3s;
+    border-radius: 5px;
+  
+}
+.nav_btn span:hover{
+    background-color: rgba(0, 0,0, 0.5);
+}
+.nav_btn span a:link,a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+.intro{
+   font-weight: 200;
+   position: absolute;
+   
+   font-size: 200px;
+  
+   align-items: center;
+   line-height: 1.4;
+   margin-top: 10%;
+   color: white;
+   display: flex;
+   justify-content: center;
+   
+   
+}
+.intro p {
+    display: flex;
+    left: 33.33%;
+    position: relative;
+}
+.abt_main{
+    display: flex;
+    flex-direction: column;
+   
+}
+.abt_main h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 45px;
+    font-family: 'Alegreya SC', serif;
+    margin: 0 auto;
+    display: flex;
+
+}
+.abt_main h3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 30px;
+    font-family: 'Alegreya SC', serif;
+    margin-left: 10%;
+}
+.abt_main p {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}   
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0,0, 0.9);
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap:2%;
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+}
+.name img {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: transparent;
+}
+.ft_cnt{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 3%;
+    opacity: 0.6;
+    gap: 20%;
+    
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.links a:link,a:visited{
+    text-decoration: none;
+}
+.devs{
+    display: flex;
+    color: white;
+   width: 300px;
+    flex-direction: column;
+    
+
+}
+.devs h3{
+    padding-bottom: 3%;
+}
+.devs p{
+    opacity: 0.6;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10%;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+    </style>
+</head>
+<body>
+    <div class="img_container">
+    </div>
+    <div class="nav_btn">
+       <span><a href="./index.html" >Home</a></span>
+       <span><a href="./T&c.html">T&C</a></span> 
+       <span><a href="./about.html" >About</a> </span>
+       <span><a href="#cnt" onclick="logic()">Contact Us</a></span>
+        
+   </div>
+   
+   <div class="intro">
+       <p>Daily Bites</p>
+   </div>
+   <div class="abt_main">
+    <h2>ABOUT US</h2>
+    <h3>About Daily Bites App :</h3>
+    <p>Welcome to Daily Bites, your go-to mobile app for hassle-free and delicious daily meals. We are on a mission to connect users with local mess owners, providing a convenient and affordable subscription service for lunch and dinner.</p>
+
+    <p> Our app is designed with simplicity and convenience in mind. With just a few taps, you can explore a wide range of food options and connect with our trusted food partners who handle the delivery. Say goodbye to the stress of cooking or searching for a good meal – Daily Bites has got you covered.
+    </p>
+    <h3>Key Features: </h3>
+    <p> 1. Easy Ordering: Our user-friendly interface makes it effortless to browse through our diverse menu and select your preferred meals. With just a few taps, you can customize your order to match your tastes and dietary preferences.</p>
+
+        <p>2. Trusted Food Partners: We collaborate with licensed and reputable food partners who adhere to food safety and hygiene regulations. This ensures that the meals you receive are prepared with the freshest ingredients and meet high-quality standards.</p>
+        
+       <p> 3. Timely Deliveries: Our dedicated food partners handle the delivery process, ensuring that your meals arrive on time, every time. Simply sit back, relax, and let us take care of your daily bites.</p>
+        
+       <p>   4. Flexible Subscriptions: We offer a variety of subscription plans to suit your needs. You have the freedom to modify or cancel your subscription based on your preferences and schedule.</p>
+        
+       <p> 5. Varied Menu Options: From delicious entrees to wholesome vegetarian or vegan dishes, our menu offers a wide range of options to cater to different palates and dietary needs. Enjoy a variety of meals that are both delicious and nutritious.</p>
+        
+       <p> 6. User-Friendly Experience: Our app is designed to make your experience seamless and enjoyable. We value your feedback and continuously strive to enhance your dining experience based on your suggestions.</p>
+        
+        <p>Join the Daily Bites community and experience the convenience of having delicious meals delivered to your doorstep. Download our app today and indulge in the joy of effortless dining.
+        
+        <p>We are committed to providing you with a delightful culinary experience while ensuring the highest standards of food safety and quality. If you have any questions or need assistance, our support team is here to help. Happy eating with Daily Bites!</p>
+   </div>
+   <div class="footer" id="footer">
+    <div class="name">
+        <img src="./logo1.jpg">
+        <h2 style="font-family: 'Open Sans', sans-serif;">DAILY BITES</h2>
+    </div>
+    <div class="ft_cnt">
+        <div class="links">
+            <a href="./about.html" >About Us</a>
+            <a  href="./T&c.html">Terms and Conditions</a>
+            <a >Licenses</a>
+            <a ></a>
+        </div>
+       
+        <div class="devs">
+            <h3>Our Team</h3>
+            <p>Gajanan Palepwad</p>
+            <p>Pranav Dhumale</p>
+            <p>Vikramaditya Khupse</p>
+            <p>Saiprasad Togalwar</p>
+        </div>
+        <div class="media">
+            <h3>Social Handles</h3>
+            <div class="icons">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+            <i class="fa-brands fa-facebook fa-lg"></i> 
+            </div>
+            
+            
+        </div>
+    </div>
+    
+</body>
+<script>
+    function logic(){
+        alert('Please go to Home Page !');
+    }
+</script>
+</html>
