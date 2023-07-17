@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Bites</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/20cafe9e9f.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </head>
-<body onload="load()">
-    <div class="img_container" id="top">
-        <nav class="nav">
-            <div class="nav_btn">
-               <span><a >Home</a></span>
-               <span><a >User</a></span> 
-               <span><a >About</a> </span>
-               <span><a >Contact Us</a></span>
-               <div class="icon">
-                 <i class="fa-brands fa-instagram"></i>&ensp;&ensp;
-                 <i class="fa-solid fa-envelope"></i>
-              </div>
-            </div>
-        </nav>
-        <div class="intro">
-            <p>Daily Bites</p>
-        </div>
-    </div>
+<body >
+    <div class="img_container">
+ </div>
+ <div class="nav_btn">
+    <span><a >Home</a></span>
+    <span><a >User</a></span> 
+    <span><a href="#footer" >About</a> </span>
+    <span><a href="#cnt">Contact Us</a></span>
+     
+</div>
+
+<div class="intro">
+    <p>Daily Bites</p>
+</div>
     <div class="txt_cont_1">
         <div class="txt_1">
             <h2> Features</h2>
@@ -127,7 +125,7 @@
 
         </div>
     </div>
-    <div class="txt_cont_5">
+    <div class="txt_cont_5" id="cnt">
         <div class="head"><h2>Contact Us</h2></div>
         <div class="cont">
             <div class="form">
@@ -149,31 +147,38 @@
            
         </div>
     </div>
-    <div class="footer">
-        <div class="foot_cont">
-            <h3>Pages</h3>
-            <br>
-            <h4>Home</h4>
-            <h4>User</h4>
-            <h4>About</h4>
-            <h4>Contact Us</h4>
+    <div class="footer" id="footer">
+        <div class="name">
+            <img src="./logo1.jpg">
+            <h2 style="font-family: 'Open Sans', sans-serif;">DAILY BITES</h2>
         </div>
-        .<div class="foot_cont">
-            <h3>abc</h3>
-            <br>
-            <h4>abc</h4>
-            <h4>abc</h4>
-            <h4>abc</h4>
-            <h4>abc</h4>
+        <div class="ft_cnt">
+            <div class="links">
+                <a >About Us</a>
+                <a >Terms and Conditions</a>
+                <a >Licenses</a>
+                <a ></a>
+            </div>
+           
+            <div class="devs">
+                <h3>Our Team</h3>
+                <p>Gajanan Palepwad</p>
+                <p>Pranav Dhumale</p>
+                <p>Vikramaditya Khupse</p>
+                <p>Saiprasad Togalwar</p>
+            </div>
+            <div class="media">
+                <h3>Social Handles</h3>
+                <div class="icons">
+                <i class="fa-brands fa-instagram fa-lg"></i>
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+                <i class="fa-brands fa-facebook fa-lg"></i> 
+                </div>
+                
+                
+            </div>
         </div>
-        <div class="foot_cont">
-            <h3>abc</h3>
-            <br>
-            <h4>abc</h4>
-            <h4>abc</h4>
-            <h4>abc</h4>
-            <h4>abc</h4>
-        </div>
+      
     </div>
 </body>
 </html>
