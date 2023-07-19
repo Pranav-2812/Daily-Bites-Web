@@ -14,14 +14,14 @@
             padding: 0;;
         }
         body{
-         
+        overflow-x: hidden;
          display: flex;
          flex-direction: column;
-     }
+        }
      .img_container{
          
       clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
-      background-image: url(./cover_img1.jpg);
+      background-image: url(./VO8\ jpg-01.jpg);
       width:100%;
       height: 600px;
       background-repeat: no-repeat;
@@ -36,15 +36,7 @@
 
 
      }
-    .img_container::after{
-     content: '';
-     position: absolute;
-     width: 100%;
-     height: 600px;
-     top: 0;
-     left: 0;
-     background-color: rgba(0, 0,0, 0.2);
-     }
+    
      .nav_btn{
  width: 100%;
  height: 50px;
@@ -121,6 +113,7 @@ justify-content: center;
     font-family: 'Alegreya SC', serif;
     margin: 0 auto;
     display: flex;
+    text-align: center;
 
 }
 .abt_main h3 {
@@ -132,7 +125,7 @@ justify-content: center;
 }
 .abt_main p {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     font-size: 25px;
     margin-left: 10%;
     margin-right: 10%;
@@ -209,6 +202,156 @@ justify-content: center;
     flex-direction: row;
     gap: 10%;
 }
+@media (max-width: 600px) {
+    /* Responsive styles */
+    *{
+            margin: 0;
+            padding: 0;;
+        }
+        body{
+        overflow-x: hidden;
+         display: flex;
+         flex-direction: column;
+        }
+   
+       .img_container{
+        clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
+        background-image: url(./VO8\ jpg-01.jpg);
+        max-width:600px;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size:cover;
+       background-position: center; 
+        /* object-position: center; */
+        display: flex;
+       
+        /* opacity: 1;
+        margin: 0 auto;
+        
+        position: relative;
+        flex-direction: column; */
+    
+    
+    }
+    .nav_btn{
+      max-width: 600px;
+       min-height: 50px;
+       top: 2%;
+       position: absolute;
+       display: flex;
+       align-items: center;
+       flex-direction: row;
+       font-weight: 300;
+ 
+       font-size: 15px;
+       padding: 0px 10px 0px 10px;
+       justify-content:flex-start;
+       margin: 0 auto;
+    }
+    .nav_btn span {
+ 
+     display: flex;
+     margin-right: 5px;
+     margin-left: 5px;
+     max-width: 125px;
+     min-height: 35px;
+     color: white;
+     font-size: 20px;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     box-sizing: border-box;
+     background: transparent;
+     transition: 0.3s;
+     border-radius: 5px;
+
+    }
+    .footer{
+    max-width: 600px;
+    min-height: 400px;
+    background-color: rgba(0, 0,0, 0.9);
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    justify-content: flex-start;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap:2%;
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 2%;
+    justify-content:safe;
+    align-items: center;
+}
+.name img {
+    max-width: 75px;
+    min-height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: transparent;
+    background-position: center;
+    
+}
+.ft_cnt{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 3%;
+    opacity: 0.6;
+    gap: 20%;
+    
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding-bottom: 3%;
+}
+.links a:link,a:visited{
+    text-decoration: none;
+}
+.devs{
+    display: flex;
+    color: white;
+   max-width: 300px;
+    flex-direction: column;
+    padding-bottom: 3%;
+    
+
+}
+.devs h3{
+    padding-bottom: 1%;
+}
+.devs p{
+    opacity: 0.6;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10%;
+    padding-bottom: 3%;
+   
+}
+.icons{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+     
+
+ 
+
+   
+    
+    
+  }
     </style>
 </head>
 <body>
@@ -222,14 +365,12 @@ justify-content: center;
         
    </div>
    
-   <div class="intro">
-       <p>Daily Bites</p>
-   </div>
+   
    <div class="abt_main">
     <h2>Terms And Conditions</h2>
     <h3>For Mess Owners: </h3>
     
-    <p>1. Acceptance of Terms By using our app, you acknowledge and agree to the following terms and conditions. </p>
+    <p> 1. Acceptance of Terms By using our app, you acknowledge and agree to the following terms and conditions. </p>
 
     <p>2. Mess owners must create an account to use our app. You must provide accurate and up-to-date information during the registration process. </p>
 
@@ -254,8 +395,11 @@ justify-content: center;
     <p>5. Mess owners may have their own cancellation and refund policies. You are responsible for reviewing and understanding the cancellation and refund policies of mess owners before placing an order. </p>
 
     <p>6. We reserve the right to suspend or terminate your account if you violate these terms and conditions. You may also terminate your account at any time by contacting our support team</p>
+
     <h2>cancellation And Refund Policy</h2>
+    
     <h3>cancellation Policy</h3>
+
     <p> • Users can cancel their order or booking through the app before it has been confirmed by the mess owner.</p> 
 
     <p>• Once the order or booking has been confirmed, cancellation may not be possible or may be subject to certain conditions as determined by the mess owner. </p>
