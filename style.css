@@ -631,7 +631,7 @@
     }
     .txt_1 p {
         display: flex;
-        max-width: 550px;
+        max-width: 300px;
         margin-left: 10%;
         margin-right: 10%;
         justify-content: center;
@@ -653,7 +653,7 @@
        scale: 0.8;
         gap: 10%;
         color:rgba(0, 0,0, 0.8);
-        
+        padding-top: 2%;
     
     }
     
@@ -661,11 +661,11 @@
     .vid_cont_1{
         background-image: url(./video\ screen.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         padding-top: 3%;
         padding-bottom: 3%;
-        max-width: 600px;
+        max-width: 550px;
         min-height: 350px;
         margin: 0 auto;
 /*         
