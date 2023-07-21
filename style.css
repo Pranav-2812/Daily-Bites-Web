@@ -388,7 +388,7 @@
  }
  .card span a:link,a:visited{
     text-decoration: none;
-    color: rgba(0, 0,0, 0.5);
+    color: white;
  }
  .card span:hover{
     transform: scale(1.15);
