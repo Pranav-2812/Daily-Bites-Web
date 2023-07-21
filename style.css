@@ -519,6 +519,7 @@
 }
 .links a:link,a:visited{
     text-decoration: none;
+    color: white;
 }
 .devs{
     display: flex;
