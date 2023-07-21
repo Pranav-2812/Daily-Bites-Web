@@ -22,7 +22,7 @@
         .img_container{
             
          clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
-         background-image: url(./VO8\ jpg-01.jpg);
+         background-image: url(./without\ text-01.jpg);
          width:100%;
          height: 600px;
          background-repeat: no-repeat;
@@ -37,8 +37,25 @@
 
 
         }
+        .intro{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+.intro img{
+    width: 1000px;
+    height: 550px ;
+    /* position: absolute; */
+    display: flex;
+    padding-top: 5%;
+    margin: 0 auto;
+   
+}
        
-        .nav_btn{
+.nav_btn{
     width: 100%;
     height: 50px;
     top: 3%;
@@ -82,26 +99,7 @@
     text-decoration: none;
 
 }
-.intro{
-   font-weight: 200;
-   position: absolute;
-   
-   font-size: 200px;
-  
-   align-items: center;
-   line-height: 1.4;
-   margin-top: 10%;
-   color: white;
-   display: flex;
-   justify-content: center;
-   
-   
-}
-.intro p {
-    display: flex;
-    left: 33.33%;
-    position: relative;
-}
+
 .abt_main{
     display: flex;
     flex-direction: column;
@@ -225,7 +223,7 @@
    
        .img_container{
         clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
-        background-image: url(./VO8\ jpg-01.jpg);
+        background-image: url(./without\ text-01.jpg);
         max-width:600px;
         max-height: 200px;
         background-repeat: no-repeat;
@@ -242,6 +240,23 @@
     
     
     }
+    .intro{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+.intro img{
+    width: 1000px;
+    height: 550px ;
+    /* position: absolute; */
+    display: flex;
+    padding-top: 5%;
+    margin: 0 auto;
+   
+}
     .nav_btn{
       max-width: 600px;
        min-height: 50px;
@@ -364,6 +379,9 @@
    
 <div class="img_container">
 </div>
+<div class="intro">
+    <img src="./without bg-01.png">
+</div>
     <div class="nav_btn">
         <span><a href="./index.html" >Home</a></span>
         <span><a href="./T&c.html">T&C</a></span> 
@@ -371,6 +389,7 @@
         <span><a href="#cnt" onclick="logic()">Contact Us</a></span>
             
     </div>
+  
     <div class="abt_main">
         <h2>Open source Libraries</h2>
         <h3>Java: -</h3>
