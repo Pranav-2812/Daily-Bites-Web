@@ -1,485 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T&C Page</title>
+    <link rel="icon" href="./logo-01.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/20cafe9e9f.js" crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             margin: 0;
-            padding: 0;;
+            padding: 0;
+            ;
         }
-        body{
-        overflow-x: hidden;
-         display: flex;
-         flex-direction: column;
+
+        body {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 100;
+            overflow-x: hidden;
         }
-     .img_container{
-         
-      clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
-      background-image: url(./without\ text-01.jpg);
-      width:100%;
-      height: 600px;
-      background-repeat: no-repeat;
-      background-size:cover;
-      object-fit: contain;
-      object-position: center;
-      display: flex;
-      opacity: 1;
-       margin: 0 auto;
-     position: relative;
-     flex-direction: column;
+
+        .img_container {
+
+            clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
+            background-image: url(./without\ text-01.jpg);
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: contain;
+            object-position: center;
+            display: flex;
+            opacity: 1;
+            margin: 0 auto;
+            position: relative;
+            flex-direction: column;
 
 
-     }
-     .intro{
-    width: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    
-}
-.intro img{
-    width: 1000px;
-    height: 550px ;
-    /* position: absolute; */
-    display: flex;
-    padding-top: 5%;
-    margin: 0 auto;
-   
-}
-    
-     .nav_btn{
- width: 100%;
- height: 50px;
- top: 3%;
- 
- position: absolute;
- display: flex;
- align-items: center;
- flex-direction: row;
- font-weight: 300;
- 
- font-size: 15px;
- padding: 0px 10px 0px 10px;
- justify-content:flex-start;
- margin: 0 auto;
-
- 
-}
-.nav_btn span {
- 
- display: flex;
- margin-right: 5px;
- margin-left: 5px;
- width: 125px;
- height: 35px;
- color: white;
- font-size: 25px;
- align-items: center;
- text-align: center;
- justify-content: center;
- box-sizing: border-box;
- background: transparent;
- transition: 0.3s;
- border-radius: 5px;
-
-}
-.nav_btn span:hover{
- background-color: rgba(0, 0,0, 0.5);
-}
-.nav_btn span a:link,a:visited {
- color: white;
- text-decoration: none;
-
-}
-
-
-.abt_main{
-    display: flex;
-    flex-direction: column;
-   
-}
-.abt_main h2 {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 45px;
-    font-family: 'Alegreya SC', serif;
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-
-}
-.abt_main h3 {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 30px;
-    font-family: 'Alegreya SC', serif;
-    margin-left: 10%;
-}
-.abt_main p {
-    display: flex;
-    justify-content:flex-start;
-    font-size: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}   
-.footer{
-    width: 100%;
-    height: 300px;
-    background-color: rgba(0, 0,0, 0.9);
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;
-}
-.name{
-    display: flex;
-    flex-direction: row;
-    gap:2%;
-    color: white;
-    font-weight: 300;
-    font-size: 30px;
-    margin-top: 2%;
-    justify-content: center;
-    align-items: center;
-}
-.name img {
-    width: 75px;
-    height: 75px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: transparent;
-}
-.ft_cnt{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 3%;
-    opacity: 0.6;
-    gap: 20%;
-    
-}
-.links{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-}
-.links a:link,a:visited{
-    text-decoration: none;
-}
-.devs{
-    display: flex;
-    color: white;
-   width: 300px;
-    flex-direction: column;
-    
-
-}
-.devs h3{
-    padding-bottom: 3%;
-}
-.devs p{
-    opacity: 0.6;
-}
-.media{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    gap: 10%;
-}
-.icons{
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    opacity: 0.6;
-}
-@media (max-width: 600px) {
-    /* Responsive styles */
-    *{
-            margin: 0;
-            padding: 0;;
         }
-        body{
-        overflow-x: hidden;
-         display: flex;
-         flex-direction: column;
+
+        .intro {
+            width: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+
         }
-   
-       .img_container{
-        clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
-        background-image: url(./without\ text-01.jpg);
-        max-width:600px;
-        max-height: 200px;
-        background-repeat: no-repeat;
-        background-size:cover;
-       background-position: center; 
-        /* object-position: center; */
-        display: flex;
-       
-        /* opacity: 1;
+
+        .intro img {
+            width: 1000px;
+            height: 550px;
+            /* position: absolute; */
+            display: flex;
+            padding-top: 5%;
+            margin: 0 auto;
+
+        }
+
+        header {
+            width: 100%;
+            max-width: 1200px;
+
+            margin-top: 1%;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0;
+            position: absolute;
+            border-radius: 15px;
+        }
+
+        .logo {
+            margin-left: 3%;
+            font-size: 25px;
+            font-weight: bold;
+            color: #fefefe;
+            font-family: 'Alegreya SC', serif;
+        }
+
+        .hamburger {
+            display: none;
+
+        }
+
+        .nav-bar ul {
+            display: flex;
+        }
+
+        .nav-bar ul li a {
+            display: block;
+            color: #fefefe;
+            font-size: 15px;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: 0.2s;
+            margin: 0 5px;
+        }
+
+        .nav-bar ul li a:hover {
+            color: rgba(0, 0, 0, 0.6);
+            background: #fefefe;
+
+        }
+
+        .nav-bar ul li a:link,
+        a:visited {
+            text-decoration: none;
+        }
+
+        .nav_btn {
+            width: 100%;
+            height: 50px;
+            top: 3%;
+
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            font-weight: 300;
+
+            font-size: 15px;
+            padding: 0px 10px 0px 10px;
+            justify-content: flex-start;
+            margin: 0 auto;
+
+
+        }
+
+        .nav_btn span {
+
+            display: flex;
+            margin-right: 5px;
+            margin-left: 5px;
+            width: 125px;
+            height: 35px;
+            color: white;
+            font-size: 25px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            box-sizing: border-box;
+            background: transparent;
+            transition: 0.3s;
+            border-radius: 5px;
+
+        }
+
+        .nav_btn span:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .nav_btn span a:link,
+        a:visited {
+            color: white;
+            text-decoration: none;
+
+        }
+
+
+        .abt_main {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .abt_main h2 {
+            padding-top: 3%;
+            padding-bottom: 3%;
+            font-size: 45px;
+            font-family: 'Alegreya SC', serif;
+            margin: 0 auto;
+            display: flex;
+            text-align: center;
+
+        }
+
+        .abt_main h3 {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 30px;
+            font-family: 'Alegreya SC', serif;
+            margin-left: 10%;
+        }
+
+        .abt_main p {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 25px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.9);
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            font-weight: 200;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            margin-top: 2%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name img {
+            width: 75px;
+            height: 75px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: transparent;
+        }
+
+        .ft_cnt {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            margin-top: 3%;
+            opacity: 0.6;
+            gap: 20%;
+
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .links a:link,
+        a:visited {
+            text-decoration: none;
+        }
+
+        .devs {
+            display: flex;
+            color: white;
+            width: 300px;
+            flex-direction: column;
+
+
+        }
+
+        .devs h3 {
+            padding-bottom: 3%;
+        }
+
+        .devs p {
+            opacity: 0.6;
+        }
+
+        .media {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            gap: 10%;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+            opacity: 0.6;
+        }
+
+        @media only screen and (max-width:1320px) {
+            header {
+                padding: 0 50px;
+                max-width: 1000px;
+            }
+        }
+
+        @media only screen and (max-width:1100px) {
+            header {
+                padding: 0 30px;
+                max-width: 800px;
+            }
+        }
+
+        @media only screen and (max-width:900px) {
+            header {
+                max-width: 100vw;
+                margin-top: 0;
+                background: rgba(0, 0, 0, 0.8);
+            }
+
+            .hamburger {
+                display: block;
+                margin-right: 3%;
+            }
+
+            .logo {
+                scale: 0.8;
+                font-family: 'Alegreya SC', serif;
+            }
+
+            .line {
+                width: 30px;
+                height: 2px;
+                background-color: white;
+                margin: 6px 0;
+            }
+
+            .nav-bar {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                max-width: 900px;
+                background: rgba(0, 0, 0, 0.8);
+                transition: 0.5s;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .nav-bar.active {
+                height: 400px;
+                /* max-width: 900px; */
+            }
+
+            .nav-bar ul {
+                display: block;
+                width: fit-content;
+                margin: 80px auto 0 auto;
+                text-align: center;
+                transition: 0.5s;
+                opacity: 0;
+
+            }
+
+            .nav-bar.active ul {
+                opacity: 1;
+
+            }
+
+            .nav-bar ul li a {
+                margin-bottom: 12px;
+                color: white;
+                font-size: large;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            /* Responsive styles */
+            * {
+                margin: 0;
+                padding: 0;
+                ;
+            }
+
+            body {
+                overflow-x: hidden;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img_container {
+                clip-path: polygon(0 0, 250% 0, 50% 100%, 0% 75%);
+                background-image: url(./without\ text-01.jpg);
+                max-width: 600px;
+                max-height: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                /* object-position: center; */
+                display: flex;
+
+                /* opacity: 1;
         margin: 0 auto;
         
         position: relative;
         flex-direction: column; */
-    
-    
-    }
-    .intro{
-        max-width: 650px;
-        max-height: 300px;
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .intro img{
-        display: flex;
-        max-width:550px;
-        min-height: 100px;
-        max-height: 300px;
-        
-        background-position: center;
-        background-size: contain;
-       
-    }
-    .nav_btn{
-      max-width: 600px;
-       min-height: 50px;
-       top: 2%;
-       position: absolute;
-       display: flex;
-       align-items: center;
-       flex-direction: row;
-       font-weight: 300;
- 
-       font-size: 15px;
-       padding: 0px 10px 0px 10px;
-       justify-content:flex-start;
-       margin: 0 auto;
-    }
-    .nav_btn span {
- 
-     display: flex;
-     margin-right: 5px;
-     margin-left: 5px;
-     max-width: 125px;
-     min-height: 35px;
-     color: white;
-     font-size: 20px;
-     align-items: center;
-     text-align: center;
-     justify-content: center;
-     box-sizing: border-box;
-     background: transparent;
-     transition: 0.3s;
-     border-radius: 5px;
 
-    }
-    .footer{
-    max-width: 600px;
-    min-height: 400px;
-    background-color: rgba(0, 0,0, 0.9);
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;
-    justify-content: flex-start;
-}
-.name{
-    display: flex;
-    flex-direction: row;
-    gap:2%;
-    color: white;
-    font-weight: 300;
-    font-size: 25px;
-    margin-top: 2%;
-    justify-content:safe;
-    align-items: center;
-}
-.name img {
-    max-width: 75px;
-    min-height: 80px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: transparent;
-    background-position: center;
-    
-}
-.ft_cnt{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 3%;
-    opacity: 0.6;
-    gap: 20%;
-    
-}
-.links{
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    padding-bottom: 3%;
-}
-.links a:link,a:visited{
-    text-decoration: none;
-    color: white;
-    opacity: 0.6;
-}
-.devs{
-    display: flex;
-    color: white;
-   max-width: 300px;
-    flex-direction: column;
-    padding-bottom: 3%;
-    
 
-}
-.devs h3{
-    padding-bottom: 1%;
-}
-.devs p{
-    opacity: 0.6;
-}
-.media{
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    gap: 10%;
-    padding-bottom: 3%;
-   
-}
-.icons{
-    padding-top: 3%;
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    opacity: 0.6;
-}
-     
+            }
 
- 
+            .intro {
+                max-width: 650px;
+                max-height: 300px;
+                display: flex;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
 
-   
-    
-    
-  }
+            }
+
+            .intro img {
+                display: flex;
+                max-width: 550px;
+                min-height: 100px;
+                max-height: 300px;
+
+                background-position: center;
+                background-size: contain;
+
+            }
+
+            .nav_btn {
+                max-width: 600px;
+                min-height: 50px;
+                top: 2%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                font-weight: 300;
+
+                font-size: 15px;
+                padding: 0px 10px 0px 10px;
+                justify-content: flex-start;
+                margin: 0 auto;
+            }
+
+            .nav_btn span {
+
+                display: flex;
+                margin-right: 5px;
+                margin-left: 5px;
+                max-width: 125px;
+                min-height: 35px;
+                color: white;
+                font-size: 20px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                box-sizing: border-box;
+                background: transparent;
+                transition: 0.3s;
+                border-radius: 5px;
+
+            }
+
+            .footer {
+                max-width: 600px;
+                min-height: 400px;
+                background-color: rgba(0, 0, 0, 0.9);
+                margin-top: 5%;
+                display: flex;
+                flex-direction: column;
+                font-weight: 200;
+                justify-content: flex-start;
+            }
+
+            .name {
+                display: flex;
+                flex-direction: row;
+                gap: 2%;
+                color: white;
+                font-weight: 300;
+                font-size: 25px;
+                margin-top: 2%;
+                justify-content: flex-start;
+                margin-left: 5%;
+                align-items: center;
+            }
+
+            .name img {
+                max-width: 75px;
+                max-height: 70px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background: transparent;
+                background-position: center;
+                margin-top: 2%;
+
+
+            }
+
+            .ft_cnt {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                margin-top: 3%;
+                margin-left: 7%;
+                opacity: 0.6;
+                gap: 20%;
+
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                max-width: 300px;
+                padding-bottom: 3%;
+            }
+
+            .links a:link,
+            a:visited {
+                text-decoration: none;
+                color: white;
+                opacity: 0.6;
+            }
+
+            .devs {
+                display: flex;
+                color: white;
+                max-width: 300px;
+                flex-direction: column;
+                padding-bottom: 3%;
+
+
+            }
+
+            .devs h3 {
+                padding-bottom: 1%;
+            }
+
+            .devs p {
+                opacity: 0.6;
+            }
+
+            .media {
+                display: flex;
+                flex-direction: column;
+                max-width: 300px;
+                gap: 10%;
+                padding-bottom: 3%;
+
+            }
+
+            .icons {
+                margin-top: 3%;
+                padding-top: 3%;
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+                opacity: 0.6;
+            }
+
+
+
+
+
+
+
+        }
     </style>
 </head>
+
 <body>
     <div class="img_container">
     </div>
     <div class="intro">
         <img src="./without bg-01.png">
     </div>
-       
-    <div class="nav_btn">
-       <span><a href="./index.html">Home</a></span>
-       <span><a href="./T&c.html">T&C</a></span> 
-       <span><a href="./about.html" >About</a> </span>
-       <span><a href="#cnt" onclick="logic()">Contact Us</a></span>
-        
-   </div>
 
-   
-   
-   <div class="abt_main">
-    <h2>Terms And Conditions</h2>
-    <h3>For Mess Owners: </h3>
-    
-    <p> 1. Acceptance of Terms By using our app, you acknowledge and agree to the following terms and conditions. </p>
+    <header>
+        <div class="logo">Daily Bites</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li type="none">
+                    <a href="./index.html" class="active">Home </a>
+                </li>
+                <li type="none">
+                    <a href="./T&c.html">T&C</a>
+                </li>
+                <li type="none">
+                    <a href="./about.html">About us</a>
+                </li>
+                <li type="none">
+                    <a href="#cnt" onclick="logic()">Contact Us</a>
+                </li>
+                <li type="none">
+                    <a href="./License.html">Lisences</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>2. Mess owners must create an account to use our app. You must provide accurate and up-to-date information during the registration process. </p>
 
-    <p>3. Our app provides a platform to connect mess owners with consumers. You are solely responsible for the quality, safety, and legality of the meals you provide to consumers. </p>
 
-    <p>4. Mess owners may set their own prices for meals. The app may facilitate payment transactions between mess owners and consumers. We reserve the right to charge a commission or service fee for each transaction. </p>
+    <div class="abt_main">
+        <h2>Terms And Conditions</h2>
+        <h3>For Mess Owners: </h3>
 
-    <p>5. Consumers may leave reviews and ratings for your mess. You understand and agree that these reviews and ratings may be publicly displayed on our app. </p>
+        <p> 1. Acceptance of Terms By using our app, you acknowledge and agree to the following terms and conditions.
+        </p>
 
-    <p>6. We reserve the right to suspend or terminate your account if you violate these terms and conditions. You may also terminate your account at any time by contacting our support team.</p> 
+        <p>2. Mess owners must create an account to use our app. You must provide accurate and up-to-date information
+            during the registration process. </p>
 
-    <p>7. We are not responsible for any damages, losses, or liabilities arising from the use of our app or any transactions between mess owners and consumers. We do not guarantee the availability or quality of the meals provided by mess owners</p>
-    <h3>For Mess Consumers: </h3>
-    <p>  1. Acceptance of Terms By using our app, you acknowledge and agree to the following terms and conditions.</p> 
+        <p>3. Our app provides a platform to connect mess owners with consumers. You are solely responsible for the
+            quality, safety, and legality of the meals you provide to consumers. </p>
 
-    <p>2. Consumers must create an account to use our app. You must provide accurate and up-to-date information during the registration process. </p>
+        <p>4. Mess owners may set their own prices for meals. The app may facilitate payment transactions between mess
+            owners and consumers. We reserve the right to charge a commission or service fee for each transaction. </p>
 
-    <p>3. You may place meal orders through the app. Payment for meals may be facilitated through the app. You understand that mess owners are solely responsible for the quality, safety, and legality of the meals they provide. </p>
+        <p>5. Consumers may leave reviews and ratings for your mess. You understand and agree that these reviews and
+            ratings may be publicly displayed on our app. </p>
 
-    <p>4. You may leave reviews and ratings for mess owners. Your reviews and ratings must be truthful and based on your own experiences. </p>
+        <p>6. We reserve the right to suspend or terminate your account if you violate these terms and conditions. You
+            may also terminate your account at any time by contacting our support team.</p>
 
-    <p>5. Mess owners may have their own cancellation and refund policies. You are responsible for reviewing and understanding the cancellation and refund policies of mess owners before placing an order. </p>
+        <p>7. We are not responsible for any damages, losses, or liabilities arising from the use of our app or any
+            transactions between mess owners and consumers. We do not guarantee the availability or quality of the meals
+            provided by mess owners</p>
+        <h3>For Mess Consumers: </h3>
+        <p> 1. Acceptance of Terms By using our app, you acknowledge and agree to the following terms and conditions.
+        </p>
 
-    <p>6. We reserve the right to suspend or terminate your account if you violate these terms and conditions. You may also terminate your account at any time by contacting our support team</p>
+        <p>2. Consumers must create an account to use our app. You must provide accurate and up-to-date information
+            during the registration process. </p>
 
-    <h2>cancellation And Refund Policy</h2>
-    
-    <h3>cancellation Policy</h3>
+        <p>3. You may place meal orders through the app. Payment for meals may be facilitated through the app. You
+            understand that mess owners are solely responsible for the quality, safety, and legality of the meals they
+            provide. </p>
 
-    <p> • Users can cancel their order or booking through the app before it has been confirmed by the mess owner.</p> 
+        <p>4. You may leave reviews and ratings for mess owners. Your reviews and ratings must be truthful and based on
+            your own experiences. </p>
 
-    <p>• Once the order or booking has been confirmed, cancellation may not be possible or may be subject to certain conditions as determined by the mess owner. </p>
+        <p>5. Mess owners may have their own cancellation and refund policies. You are responsible for reviewing and
+            understanding the cancellation and refund policies of mess owners before placing an order. </p>
 
-    <p>• Users should refer to the specific cancellation policies set by the mess owner for each order or booking</p>
-    <h3>Refund Policy</h3>
-    <p>• If a user cancels an order or booking before it has been confirmed, any payment made will be refunded in full. </p>
+        <p>6. We reserve the right to suspend or terminate your account if you violate these terms and conditions. You
+            may also terminate your account at any time by contacting our support team</p>
 
-    <p>• If a cancellation is made after confirmation, the refund will be subject to the mess owner's cancellation policy. </p>
+        <h2>cancellation And Refund Policy</h2>
 
-    <p>• The mess owner may impose certain fees or charges for cancellations made after confirmation.</p> 
+        <h3>cancellation Policy</h3>
 
-    <p>• Refunds will be processed through the same payment method used for the original transaction, unless otherwise specified by the mess owner. </p>
+        <p> • Users can cancel their order or booking through the app before it has been confirmed by the mess owner.
+        </p>
 
-   <p>• The time required for the refund to reflect in the user's account may vary depending on the payment gateway or financial institution</p>
+        <p>• Once the order or booking has been confirmed, cancellation may not be possible or may be subject to certain
+            conditions as determined by the mess owner. </p>
 
-   </div>
-   <div class="footer" id="footer">
-    <div class="name">
-        <img src="./logo-01.png">
-        <h2 style="font-family: 'Open Sans', sans-serif;">DAILY BITES</h2>
+        <p>• Users should refer to the specific cancellation policies set by the mess owner for each order or booking
+        </p>
+        <h3>Refund Policy</h3>
+        <p>• If a user cancels an order or booking before it has been confirmed, any payment made will be refunded in
+            full. </p>
+
+        <p>• If a cancellation is made after confirmation, the refund will be subject to the mess owner's cancellation
+            policy. </p>
+
+        <p>• The mess owner may impose certain fees or charges for cancellations made after confirmation.</p>
+
+        <p>• Refunds will be processed through the same payment method used for the original transaction, unless
+            otherwise specified by the mess owner. </p>
+
+        <p>• The time required for the refund to reflect in the user's account may vary depending on the payment gateway
+            or financial institution</p>
+
     </div>
-    <div class="ft_cnt">
-        <div class="links">
-            <a href="./about.html" >About Us</a>
-            <a href="./T&c.html" >Terms and Conditions</a>
-            <a href="./License.html">Licenses</a>
-            
+    <div class="footer" id="footer">
+        <div class="name">
+            <img src="./logo-01.png">
+            <h2 style="font-family: 'Open Sans', sans-serif;">DAILY BITES</h2>
         </div>
-       
-        <div class="devs">
-            <h3>Our Team</h3>
-            <p>Gajanan Palepwad</p>
-            <p>Pranav Dhumale</p>
-            <p>Vikramaditya Khupse</p>
-            <p>Saiprasad Togalwar</p>
-        </div>
-        <div class="media">
-            <h3>Social Handles</h3>
-            <div class="icons">
-            <i class="fa-brands fa-instagram fa-lg"></i>
-            <i class="fa-brands fa-linkedin fa-lg"></i>
-            <i class="fa-brands fa-facebook fa-lg"></i> 
+        <div class="ft_cnt">
+            <div class="links">
+                <a href="./about.html">About Us</a>
+                <a href="./T&c.html">Terms and Conditions</a>
+                <a href="./License.html">Licenses</a>
+
             </div>
-            
-            
+
+            <div class="devs">
+                <h3>Our Team</h3>
+                <p>Gajanan Palepwad</p>
+                <p>Pranav Dhumale</p>
+                <p>Vikramaditya Khupse</p>
+                <p>Saiprasad Togalwar</p>
+            </div>
+            <div class="media">
+                <h3>Social Handles</h3>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                </div>
+
+
+            </div>
         </div>
-    </div>
-    
+
 </body>
+<script src="./app.js"></script>
 <script>
-    function logic(){
+    function logic() {
         alert('Please go to Home Page !');
     }
 </script>
+
 </html>
