@@ -13,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/20cafe9e9f.js" crossorigin="anonymous"></script>
+    
 
 </head>
 
-<body>
+<body onload="startCounter()">
     <div class="img_container">
     </div>
     <div class="intro">
@@ -58,8 +59,7 @@
         <div class="particle"></div>
         <div class="particle"></div>
         <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
+      
         <div class="txt_cont_1">
             <div class="txt_1">
                 <h2> Features</h2>
@@ -71,6 +71,12 @@
                     place to eat in a new city.</p>
             </div>
         </div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
         <div class="txt_cont_2">
             <div class="txt_2_1">
                 <div class="merge">
@@ -105,9 +111,22 @@
                     your
                     preferences.</p>
             </div>
+        
         </div>
         <div class="vid_cont_1">
 
+        </div>
+        <div class="counter" onmouseenter="startCounter()">
+            <div class="same">
+                <img src="./cooking 1.png">
+                <div id="count_1"></div>
+                <p>Satisfied Mess Owners and Still Counting....</p>
+            </div>
+            <div class="same">
+                <img src="./binge-eating 1.png">
+                <div id="count_2"></div>
+                <p>Satisfied Consumers and Still Counting......</p>
+            </div>
         </div>
         <div class="txt_cont_3">
             <div class="txt_3">
@@ -217,17 +236,18 @@
 
             </div>
         </div>
-    </div>
+    
     <div class="footer" id="footer">
         <div class="name">
             <img src="./logo-01.png">
-            <h2 style="font-family: 'Open Sans', sans-serif;">DAILY BITES</h2>
+            <h2 >DAILY BITES</h2>
         </div>
         <div class="ft_cnt">
             <div class="links">
+                <a href="./index.html">Home</a>
                 <a href="./about.html">About Us</a>
                 <a href="./T&c.html">Terms and Conditions</a>
-                <a href="./License.html">Licenses</a>
+                
 
             </div>
 
@@ -258,7 +278,7 @@
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+    import { getFirestore, collection, setDoc ,doc} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -291,14 +311,14 @@
         const message = document.getElementById("msg").value;
 
         try {
-            const docRef = await addDoc(collection(db, "ContactUs"), {
+            const docRef = await setDoc(doc(db, "ContactUs", email), {
                 name: name,
                 email: email,
                 message:message,
 
             });
 
-            console.log("Document written with ID: ", docRef.id);
+            console.log("Document written with email: ", docRef);
             form.reset();
         } catch (error) {
             console.error("Error adding document: ", error);

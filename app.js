@@ -4,36 +4,56 @@ hamburger.onclick = function () {
     navBar.classList.toggle("active");
     hamburger.classList.toggle("active");
 }
-// document.addEventListener('DOMContentLoaded', function() {
-//   const particles = document.querySelectorAll('.particle');
-//   const animationDuration = 2; // Duration of the animation in seconds
+function startCounter( step = 20) {
+    const targetNumber1=20;
+    const counterElement1 = document.getElementById('count_1');
+    const startNumber1 = 0;
+    const totalSteps1 = 20;
+    const increment1 = 1;
 
-//   function randomDelay() {
-//     return Math.random() * animationDuration + 's'; // Random animation delay
-//   }
+    let currentNumber1 = startNumber1;
+    let currentStep1 = 0;
 
-//   function applyWaveAnimation(particle) {
-//     const horizontalDistance = 100; // Distance to move horizontally in pixels
-//     const waveHeight = 50; // Height of the wave in pixels
+    const counterInterval1 = setInterval(() => {
+      currentNumber1 += increment1;
+      currentStep1++;
 
-//     particle.style.animation = `waveAnimation ${animationDuration}s ease-in-out infinite`;
-//     particle.style.animationDelay = randomDelay();
-//     particle.style.animationDirection = Math.random() < 0.5 ? 'reverse' : 'normal';
+      if (currentStep1 >= totalSteps1) {
+        clearInterval(counterInterval1);
+        currentNumber1= targetNumber1;
+      }
 
-//     // Add random horizontal position
-//     particle.style.left = Math.random() * 100 + 'vw';
+      counterElement1.innerHTML = currentNumber1+"+"; // Update the counter display
+    }, step);
+    const targetNumber2=15;
+    const counterElement2 = document.getElementById('count_2');
+    const startNumber2= 0;
+    const totalSteps2 = 20;
+    const increment2= 1;
 
-//     // Add random vertical position
-//     particle.style.top = Math.random() * 100 + 'vh';
-//   }
+    let currentNumber2 = startNumber2;
+    let currentStep2 = 0;
 
-//   // Apply wave animation to each particle
-//   particles.forEach(applyWaveAnimation);
-// });
+    const counterInterval2 = setInterval(() => {
+      currentNumber2 += increment2;
+      currentStep2++;
 
+      if (currentStep2 >= totalSteps2) {
+        clearInterval(counterInterval2);
+        currentNumber2= targetNumber2;
+      }
 
-
-
+      counterElement2.innerHTML = currentNumber2+"+"; // Update the counter display
+    }, step);
   
+
+ 
+};
+
+
+
+
+
+
 
 
